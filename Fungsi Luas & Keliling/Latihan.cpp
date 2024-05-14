@@ -11,6 +11,14 @@ double hitung_keliling(double p,double l){
 	return keliling;
 }
 
+void tampilkan_luas(double p,double l){
+	cout << "luasnya adalah: ";
+	cout << hitung_luas(p,l) << endl;	
+}
+void tampilkan_keliling(double p,double l){
+	cout << "kelilingnya adalah: ";
+	cout << hitung_keliling(p,l) << endl;
+}
 int main(){
 	
 	double panjang,lebar;
@@ -19,10 +27,8 @@ int main(){
 	cout << "lebar :";
 	cin>>lebar;
 	
-	cout <<"luasnya adalah: ";
-	cout <<hitung_luas(panjang,lebar) << endl;
-	cout <<"luasnya adalah: ";
-	cout <<hitung_keliling(panjang,lebar) << endl;
+	tampilkan_luas(panjang,lebar);
+	tampilkan_keliling(panjang,lebar);
 	
 	return 0;
-}
+} 
